@@ -103,11 +103,11 @@
                 <i class="fas fa-table"></i>Makanan</a>
               </li>
               <li>
-                <a href="order.html">
+                <a href="/order-admin">
                 <i class="far fa-check-square"></i>Order</a>
               </li>
               <li>
-                <a href="transaksi.html">
+                <a href="/transaksi-admin">
                 <i class="fas fa-copy"></i>Transaksi</a>
               </li>
             </ul>
@@ -132,16 +132,16 @@
                   <div class="account-wrap">
                     <div class="account-item clearfix js-item-menu">
                       <div class="image" style="border-radius: 50px;">
-                        <img src="images/icon/avatar-01.jpg" alt="John Doe" />
+                        <img src="/asset/images/icon/avatar-01.jpg" alt="John Doe" />
                       </div>
                       <div class="content">
-                        <a class="js-acc-btn" href="#">john doe</a>
+                        <a class="js-acc-btn" href="#">Admin</a>
                       </div>
                       <div class="account-dropdown js-dropdown">
                         <div class="info clearfix">
                           <div class="image">
                             <a href="#">
-                            <img src="images/icon/avatar-01.jpg" alt="John Doe" />
+                            <img src="/asset/images/icon/avatar-01.jpg" alt="John Doe" />
                             </a>
                           </div>
                           <div class="content">
@@ -175,12 +175,12 @@
                   <div class="table-data__tool">
                     <div class="table-data__tool-left">
                       <div class="rs-select2--light rs-select2--md">
-                        <form class="form-header" action="" method="POST">
+                        {{-- <form class="form-header" action="" method="POST">
                           <input class="au-input au-input--xl" type="text" name="search" placeholder="Cari Data" />
                           <button class="au-btn--submit" type="submit">
                           <i class="zmdi zmdi-search"></i>
                           </button>
-                        </form>
+                        </form> --}}
                       </div>
                     </div>
                     <div class="table-data__tool-right">
@@ -196,7 +196,7 @@
                           <thead class="table-success">
                             <tr>
                               <th>No</th>
-                              <th>Nama</th>
+                              <th>Nama Makanan</th>
                               <th>Harga</th>
                               <th>Status</th>
                               <th>Gambar</th>
@@ -218,7 +218,7 @@
                                  
                                 </td>
                                 <td>
-                                  <a href="{{route('edit-user')}}" class="btn btn-primary">Edit</a> | 
+                                  <a href="{{route('edit-makanan')}}" class="btn btn-primary">Edit</a> | 
                                   <a href="#"  onclick="confirm('yakin untuk menghapus ?');" class="btn btn-danger">Hapus</a>
                                 </td>
                               </tr>

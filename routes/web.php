@@ -30,4 +30,7 @@ Route::get('/user-admin', 'Admin\UserController@index');
 Route::get('/user-admin/tambah-user', 'Admin\UserController@create')->name('tambah-user');
 Route::get('/user-admin/edit-user', 'Admin\UserController@edit')->name('edit-user');
 Route::get('/makanan-admin', 'Admin\FoodController@index');
-Route::get('/makanan-admin/tambah-makanan', 'Admin\FoodController@create');
+Route::get('/makanan-admin/tambah-makanan', 'Admin\FoodController@create')->name('tambah-makanan');
+Route::get('/makanan-admin/edit-makanan', 'Admin\FoodController@edit')->name('edit-makanan');
+Route::get('/order-admin', 'Admin\OrderController@index');
+Route::get('/order-admin/tambah-order', 'Admin\OrderController@create');

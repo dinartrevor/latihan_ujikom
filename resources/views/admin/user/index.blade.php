@@ -102,11 +102,11 @@
                 <i class="fas fa-table"></i>Makanan</a>
               </li>
               <li>
-                <a href="order.html">
+                <a href="/order-admin">
                 <i class="far fa-check-square"></i>Order</a>
               </li>
               <li>
-                <a href="transaksi.html">
+                <a href="/transaksi-admin">
                 <i class="fas fa-copy"></i>Transaksi</a>
               </li>
             </ul>
