@@ -186,7 +186,7 @@
                                   </div>
                                   <div class="text">
                                     <h5 class="name">{{$terbaru->name}}</h5>
-                                    <p>200000</p>
+                                    <p>{{$terbaru->price}}</p>
                                     <p>{{$terbaru->created_at->diffForHumans()}}</p>
                                   </div>
                                 </div>
