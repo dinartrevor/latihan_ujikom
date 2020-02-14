@@ -21,6 +21,7 @@ class FoodSeeder extends Seeder
                 'price' => $faker->randomNumber,
                 'status' => $faker->word,
                 'image' =>'https://cdn-image.bisnis.com/posts/2018/10/02/844786/raisa-topo.jpg',
+                'created_at' => $faker->date,
            ]);
         }
     }

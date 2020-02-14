@@ -4,7 +4,7 @@ namespace App\Http\Controllers\User;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-
+use App\Food;
 class DashboardUserController extends Controller
 {
     /**
@@ -14,7 +14,9 @@ class DashboardUserController extends Controller
      */
     public function index()
     {
-        return view('user.dashboard.index');
+
+        $makanan_terbaru=Food::orderBy('created_at', 'DESC')->limit(4)->get();
+        return view('user.dashboard.index', compact('makanan_terbaru'));
     }
 
     /**

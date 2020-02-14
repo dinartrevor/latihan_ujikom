@@ -165,40 +165,44 @@
                 </div>
                 <div class="col-lg-12">
                   <div class="au-card au-card--no-shadow au-card--no-pad m-b-40">
-                    <div class="au-card-title" style="background-image:url('images/bg-title-02.jpg');">
+                    <div class="au-card-title" style="background-image:url('/asset/images/bg-title-02.jpg');">
                       <div class="bg-overlay bg-overlay--blue"></div>
                       <h3 class="text-center">
                         <i class="zmdi zmdi-comment-text"></i>Makanan Terbaru
                       </h3>
                     </div>
                     <div class="au-inbox-wrap js-inbox-wrap">
-                      <div class="au-message js-list-load">
-                        <div class="au-message-list">
-                          <div class="au-message__item unread">
-                            <div class="au-message__item-inner">
-                              <div class="au-message__item-text">
-                                <div class="avatar-wrap">
-                                  <div class="avatar">
-                                    <img src="/asset/images/icon/avatar-02.jpg" alt="John Smith">
+                     
+                        <div class="au-message js-list-load">
+                          <div class="au-message-list">
+                             @foreach($makanan_terbaru as $terbaru)
+                            <div class="au-message__item unread">
+                              <div class="au-message__item-inner">
+                                <div class="au-message__item-text">
+                                  <div class="avatar-wrap">
+                                    <div class="avatar">
+                                      <img src="{{$terbaru->image}}" alt="John Smith">
+                                    </div>
+                                  </div>
+                                  <div class="text">
+                                    <h5 class="name">{{$terbaru->name}}</h5>
+                                    <p>200000</p>
+                                    <p>{{$terbaru->created_at->diffForHumans()}}</p>
                                   </div>
                                 </div>
-                                <div class="text">
-                                  <h5 class="name">Seblak</h5>
-                                  <p>200000</p>
-                                  <p>3 Menit yang lalu</p>
+                                <div class="au-message__item-time">
+                                  <a href="/makanan-user/detail-pesan" class="btn btn-primary">Detail Pesan</a>
                                 </div>
                               </div>
-                              <div class="au-message__item-time">
-                                <a href="/makanan-user/detail-pesan" class="btn btn-primary">Detail Pesan</a>
-                              </div>
                             </div>
+                             @endforeach
+                          </div>
+                          <div class="au-message__footer">
+                            <a href="makanan-user.html" class="au-btn au-btn-load js-load-btn">Selengakapnya</a>
                           </div>
                         </div>
-                        <div class="au-message__footer">
-                          <a href="makanan-user.html" class="au-btn au-btn-load js-load-btn">Selengakapnya</a>
-                        </div>
                       </div>
-                    </div>
+                   
                   </div>
                 </div>
               </div>
